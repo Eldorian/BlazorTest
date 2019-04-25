@@ -1,0 +1,101 @@
+﻿@page "/"
+
+<h1>Getting Started with Blazor</h1>
+
+<ul class="x-hidden-focus">
+    <li>
+        <p>Install the latest <a href="https://dotnet.microsoft.com/download/dotnet-core/3.0" data-linktype="external">.NET Core 3.0 Preview SDK</a> release.</p>
+    </li>
+    <li>
+        <p>Install the Blazor templates by running the following command in a command shell:</p>
+        <div class="codeHeader" id="code-try-0" data-bi-name="code-header">
+            <span class="language">console</span>
+        </div><pre><code class="lang-console" data-author-content="dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview4-19216-03
+">dotnet new -i Microsoft.AspNetCore.Blazor.Templates::3.0.0-preview4-19216-03
+</code></pre>
+    </li>
+    <li>       
+            <section id="tabpanel_CeZOj-G++Q_visual-studio" role="tabpanel" data-tab="visual-studio">
+
+                <p>1.&nbsp;Install the latest preview of <a href="https://visualstudio.com/preview" data-linktype="external">Visual Studio 2019</a> with the <strong>ASP.NET and web development</strong> workload.</p>
+                <p>2.&nbsp;Install the latest <a href="https://go.microsoft.com/fwlink/?linkid=870389" data-linktype="external">Blazor extension</a> from the Visual Studio Marketplace. This step makes Blazor templates available to Visual Studio.</p>
+                <p>3.&nbsp;Enable Visual Studio to use preview SDKs: Open <strong>Tools</strong> &gt; <strong>Options</strong> in the menu bar. Open the <strong>Projects and Solutions</strong> node. Open the <strong>.NET Core</strong> tab. Check the box for <strong>Use previews of the .NET Core SDK</strong>. Select <strong>OK</strong>.</p>
+                <p>4.&nbsp;Create a new project.</p>
+                <p>5.&nbsp;Select <strong>ASP.NET Core Web Application</strong>. Select <strong>Next</strong>.</p>
+                <p>6.&nbsp;Provide a project name in the <strong>Project name</strong> field or accept the default project name. Confirm the <strong>Location</strong> entry is correct or provide a location for the project. Select <strong>Create</strong>.</p>
+                <p>7.&nbsp;In the <strong>Create a new ASP.NET Core Web Application</strong> dialog, confirm that <strong>.NET Core</strong> and <strong>ASP.NET Core 3.0</strong> are selected.</p>
+                <p class="x-hidden-focus">8.&nbsp;For a Blazor client-side experience, choose the <strong>Blazor (client-side)</strong> template. For a Blazor server-side experience, choose the <strong>Blazor (server-side)</strong> template. Select <strong>Create</strong>. For information on the two Blazor hosting models, server-side and client-side, see <a class="xref" href="https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-3.0" data-linktype="relative-path">Blazor hosting models</a>.</p>
+                <p>9.&nbsp;Press <strong>F5</strong> to run the app.</p>
+            </section>
+            <section id="tabpanel_CeZOj-G++Q_visual-studio-code" role="tabpanel" data-tab="visual-studio-code" aria-hidden="true" hidden="hidden">
+
+                <p>1.&nbsp;Install <a href="https://code.visualstudio.com/" data-linktype="external">Visual Studio Code</a>.</p>
+                <p>2.&nbsp;Install the latest <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp" data-linktype="external">C# for Visual Studio Code extension</a>.</p>
+                <p>3.&nbsp;For a Blazor client-side experience, execute the following command from a command shell:</p>
+                <div class="codeHeader" id="code-try-1" data-bi-name="code-header">
+                    <span class="language">console</span>
+                    <button class="action" data-bi-name="copy">
+                        <span class="docon docon-edit-copy" role="presentation"></span>
+                        <span>Copy</span>
+                    </button>
+                </div><pre><code class="lang-console" data-author-content="dotnet new blazor -o WebApplication1
+">dotnet new blazor -o WebApplication1
+</code></pre>
+                <p>For a Blazor server-side experience, execute the following command from a command shell:</p>
+                <div class="codeHeader" id="code-try-2" data-bi-name="code-header">
+                    <span class="language">console</span>
+                    <button class="action" data-bi-name="copy">
+                        <span class="docon docon-edit-copy" role="presentation"></span>
+                        <span>Copy</span>
+                    </button>
+                </div><pre><code class="lang-console" data-author-content="dotnet new blazorserverside -o WebApplication1
+">dotnet new blazorserverside -o WebApplication1
+</code></pre>
+                <p>For information on the two Blazor hosting models, server-side and client-side, see <a class="xref" href="https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-3.0" data-linktype="relative-path">Blazor hosting models</a>.</p>
+                <div class="alert is-info">
+                    <p class="alert-title"><span class="docon docon-status-error-outline" aria-hidden="true"></span> Note</p>
+                    <p>Only Blazor client-side is supported on macOS in ASP.NET Core 3.0 Preview 4. For more information, see <a href="https://github.com/aspnet/AspNetCore/issues/9402" data-linktype="external">Blazor server side: dotnet run fails with InvalidOperationException on MacOS</a>.</p>
+                </div>
+                <p>4.&nbsp;Open the <em>WebApplication1</em> folder in Visual Studio Code.</p>
+                <p>5.&nbsp;For a Blazor server-side project, the IDE requests that you add assets to build and debug the project. Select <strong>Yes</strong>.</p>
+                <p>6.&nbsp;If using a Blazor server-side app, run the app using the Visual Studio Code debugger. If using a Blazor client-side app, execute <code>dotnet run</code> from the app's project folder.</p>
+                
+            </section>
+            <section id="tabpanel_CeZOj-G++Q_netcore-cli" role="tabpanel" data-tab="netcore-cli" aria-hidden="true" hidden="hidden">
+
+                <p>For a Blazor client-side experience, execute the following commands from a command shell:</p>
+                <div class="codeHeader" id="code-try-3" data-bi-name="code-header">
+                    <span class="language">console</span>
+                    <button class="action" data-bi-name="copy">
+                        <span class="docon docon-edit-copy" role="presentation"></span>
+                        <span>Copy</span>
+                    </button>
+                </div><pre><code class="lang-console" data-author-content="dotnet new blazor -o WebApplication1
+cd WebApplication1
+dotnet run
+">dotnet new blazor -o WebApplication1
+cd WebApplication1
+dotnet run
+</code></pre>
+                <p>For a Blazor server-side experience, execute the following commands from a command shell:</p>
+                <div class="codeHeader" id="code-try-4" data-bi-name="code-header">
+                    <span class="language">console</span>
+                    <button class="action" data-bi-name="copy">
+                        <span class="docon docon-edit-copy" role="presentation"></span>
+                        <span>Copy</span>
+                    </button>
+                </div><pre><code class="lang-console" data-author-content="dotnet new blazorserverside -o WebApplication1
+cd WebApplication1
+dotnet run
+">dotnet new blazorserverside -o WebApplication1
+cd WebApplication1
+dotnet run
+</code></pre>
+                <p>For information on the two Blazor hosting models, server-side and client-side, see <a class="xref" href="https://docs.microsoft.com/en-us/aspnet/core/blazor/hosting-models?view=aspnetcore-3.0" data-linktype="relative-path">Blazor hosting models</a>.</p>
+                <div class="alert is-info">
+                    <p class="alert-title"><span class="docon docon-status-error-outline" aria-hidden="true"></span> Note</p>
+                    <p>On macOS, use a Blazor client-side app. Blazor server-side isn't supported for macOS on ASP.NET Core 3.0 Preview 4. For more information, see <a href="https://github.com/aspnet/AspNetCore/issues/9402" data-linktype="external">Blazor server side: dotnet run fails with InvalidOperationException on MacOS</a>.</p>
+                </div>
+            </section>
+    </li>
+</ul>
